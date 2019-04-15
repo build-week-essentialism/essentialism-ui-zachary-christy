@@ -197,6 +197,10 @@ img {
 .navbar .nav-container .logo {
   font-size: 2.4rem;
 }
+.about-header {
+  background-color: #F4F4F4;
+  padding-bottom: 20px;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -220,7 +224,65 @@ footer .footer-nav-container span {
 footer small {
   font-size: 1.6rem;
 }
-header {
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 0 20px 30px;
+}
+.card-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #FBFBFB;
+  border-radius: 5px;
+  margin: 30px 0;
+  background-color: #FBFBFB;
+  -webkit-box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
+}
+.card-container .card img,
+.card-container .card h2,
+.card-container .card p {
+  margin-bottom: 10px;
+}
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/about.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  padding: 20px 50px;
+}
+.jumbotron .jumbo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #00000099;
+  color: #fff;
+  border: 5px solid black;
+}
+.who-are-we {
+  margin-top: 50px;
+}
+.who-are-we h1 {
+  text-align: center;
+}
+.header-container {
   background-image: url(../assets/header.jpg);
   background-position: center;
   background-size: cover;

@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     padding-top: 60px;
+    color: #303030;
+
   }
   .tabs-item {
     display: none;
@@ -31,7 +33,7 @@
     display: flex;
     justify-content: center;
     background-color: #F4F4F4;
-    color: black;
+    color: #303030;
   }
 
   .tabs-link {
@@ -39,22 +41,23 @@
     font-size: 24px;
     background-color: #F4F4F4;
     border-right: 1px solid white;
-    color: #000;
+    color: #303030;
     cursor: pointer;
     &:hover {
-      background-color: #000;
+      background-color: #303030;
       color: #fff;
     }
   }
   .tabs-link-selected {
     z-index: 2;
-    border-right: 2px solid #000;
-    border-left: 2px solid #000;
     background-color: white;
-    color: black;
+    color: #303030;
+    -webkit-box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
+    box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
     &:hover {
       background-color: white;
-      color: #000;
+      color: #303030;
     }
   }
 }

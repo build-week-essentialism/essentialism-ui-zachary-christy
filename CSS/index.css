@@ -137,6 +137,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -190,16 +191,31 @@ img {
 .navbar .nav-container a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 .navbar .nav-container .link {
   font-size: 1.6rem;
 }
+.navbar .nav-container .link:hover {
+  transform: scale(1.5);
+  color: #0093FF;
+}
 .navbar .nav-container .logo {
   font-size: 2.4rem;
+}
+.navbar .nav-container .logo:hover {
+  transform: scale(1.1);
+  color: #0093FF;
 }
 .about-header {
   background-color: #F4F4F4;
   padding-bottom: 20px;
+}
+.about-header .nav-container .logo {
+  color: #303030;
+}
+.about-header .nav-container .link {
+  color: #303030;
 }
 footer {
   display: flex;
@@ -217,6 +233,14 @@ footer .footer-nav-container {
 footer .footer-nav-container a {
   text-decoration: none;
   color: black;
+  transition: all 0.5s ease;
+}
+footer .footer-nav-container .link {
+  font-size: 1.6rem;
+}
+footer .footer-nav-container .link:hover {
+  transform: scale(1.1);
+  color: #0093FF;
 }
 footer .footer-nav-container span {
   margin: 0 5px;
@@ -247,6 +271,10 @@ footer small {
   -webkit-box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease;
+}
+.card-container .card:hover {
+  transform: scale(1.01);
 }
 .card-container .card img,
 .card-container .card h2,
@@ -257,11 +285,11 @@ footer small {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../assets/about.jpg);
+  background-image: url(../assets/about-black.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 500px;
   padding: 20px 50px;
 }
 .jumbotron .jumbo-container {
@@ -274,10 +302,13 @@ footer small {
   z-index: 2;
   background-color: #00000099;
   color: #fff;
-  border: 5px solid black;
+}
+.jumbotron h1 {
+  margin-bottom: 20px;
 }
 .who-are-we {
   margin-top: 50px;
+  color: #303030;
 }
 .who-are-we h1 {
   text-align: center;
@@ -311,10 +342,14 @@ footer small {
   font-size: 2rem;
   padding: 15px 30px;
   text-decoration: none;
+  -webkit-box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease;
 }
 .cta-container .cta-button:hover {
-  border: 2px solid #0093FF;
-  background-color: #0093FF;
+  border: 2px solid #fff;
+  background-color: #00000000;
   color: #fff;
 }
 .tabs {
@@ -327,6 +362,7 @@ footer small {
   display: flex;
   justify-content: center;
   padding-top: 60px;
+  color: #303030;
 }
 .tabs .tabs-item {
   display: none;
@@ -348,28 +384,29 @@ footer small {
   display: flex;
   justify-content: center;
   background-color: #F4F4F4;
-  color: black;
+  color: #303030;
 }
 .tabs .tabs-link {
   padding: 20px 25px;
   font-size: 24px;
   background-color: #F4F4F4;
   border-right: 1px solid white;
-  color: #000;
+  color: #303030;
   cursor: pointer;
 }
 .tabs .tabs-link:hover {
-  background-color: #000;
+  background-color: #303030;
   color: #fff;
 }
 .tabs .tabs-link-selected {
   z-index: 2;
-  border-right: 2px solid #000;
-  border-left: 2px solid #000;
   background-color: white;
-  color: black;
+  color: #303030;
+  -webkit-box-shadow: 5px -5px 10px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px -5px 10px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -5px 10px -10px rgba(0, 0, 0, 0.75);
 }
 .tabs .tabs-link-selected:hover {
   background-color: white;
-  color: #000;
+  color: #303030;
 }

@@ -253,7 +253,7 @@ footer .footer-nav-container .link {
 }
 @media (max-width: 500px) {
   footer .footer-nav-container .link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 footer .footer-nav-container .link:hover {
@@ -268,7 +268,7 @@ footer small {
 }
 @media (max-width: 500px) {
   footer small {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .card-container {
@@ -347,6 +347,16 @@ footer small {
 .jumbotron h1 {
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .jumbotron h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .jumbotron p {
+    font-size: 1.2rem;
+  }
+}
 .who-are-we {
   margin-top: 50px;
   color: #303030;
@@ -364,7 +374,7 @@ footer small {
   flex-direction: column;
   justify-content: space-between;
 }
-.cta-container {
+.header-container .cta-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -372,11 +382,23 @@ footer small {
   margin-bottom: 250px;
   color: #fff;
 }
-.cta-container h1,
-.cta-container h4 {
+.header-container .cta-container h1 {
   margin-bottom: 30px;
 }
-.cta-container .cta-button {
+@media (max-width: 500px) {
+  .header-container .cta-container h1 {
+    font-size: 3rem;
+  }
+}
+.header-container .cta-container h4 {
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .header-container .cta-container h4 {
+    font-size: 1.8rem;
+  }
+}
+.header-container .cta-container .cta-button {
   border: 2px solid #0093FF;
   border-radius: 5px;
   background-color: #0093FF;
@@ -389,7 +411,7 @@ footer small {
   box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease;
 }
-.cta-container .cta-button:hover {
+.header-container .cta-container .cta-button:hover {
   border: 2px solid #fff;
   background-color: #00000000;
   color: #fff;

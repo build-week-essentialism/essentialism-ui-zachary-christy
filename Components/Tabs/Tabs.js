@@ -1,6 +1,8 @@
 class Tab {
   constructor(tabElement, linkElement) {
+    // tabElement is the container
     this.tabElement = tabElement;
+    // linkElement are the links within the container
     this.linkElement = linkElement;
 
     this.tabsLink = new TabLink(this.linkElement, this.tabElement);
@@ -22,12 +24,18 @@ class Tab {
 
 class TabLink {
   constructor(element, tabElement) {
+    // link Element passed thru from Tab
     this.element = element;
+    // Container passed thru from Tab
     this.tabElement = tabElement;
+
     this.data = this.element.dataset.tab;
 
+    // getting tabs-items using data set
     this.contentElement = tabElement.querySelector(`.tabs-items[data-tab="${this.data}"]`);
+    // getting tabs-item using data set
     this.itemElement = tabElement.querySelector(`.tabs-item[data-tab="${this.data}"]`);
+
     this.tabItem = new TabItem(this.contentElement, this.itemElement, this.tabElement);
   };
 
@@ -66,9 +74,11 @@ class TabLink {
 
 class TabItem {
   constructor(contentElement, itemElement, tabElement) {
-    // Assign this.element to the passed in element
+    // tabs-item Element
     this.contentElement = contentElement;
+    // tabs-items Element
     this.itemElement = itemElement;
+    // container
     this.tabElement = tabElement;
   }
 
@@ -86,7 +96,7 @@ class TabItem {
 
   accordion() {
     const content = this.tabElement.querySelectorAll('.tabs-items');
-    console.log(this.itemElement);
+
     content.forEach(function(content) {
       content.classList.remove('tabs-items-selected');
 
@@ -99,9 +109,11 @@ class TabItem {
   }
 }
 
+// container
 const tabs = document.querySelectorAll('.tabs');
 
 tabs.forEach(function(tabElement) {
+  // links
   const links = tabElement.querySelectorAll('.tabs-link');
 
   links.forEach(function(linkElement) {

@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -107,7 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
 ul {
   list-style: none;
 }
@@ -352,6 +351,12 @@ footer small {
     font-size: 3rem;
   }
 }
+@media (max-width: 1000px) {
+  .jumbotron p {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
 @media (max-width: 500px) {
   .jumbotron p {
     font-size: 1.2rem;
@@ -381,21 +386,34 @@ footer small {
   align-items: center;
   margin-bottom: 250px;
   color: #fff;
+  padding: 0 10px;
 }
 .header-container .cta-container h1 {
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header-container .cta-container h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .header-container .cta-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
 }
 .header-container .cta-container h4 {
   margin-bottom: 30px;
+  text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header-container .cta-container h4 {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .header-container .cta-container h4 {
+    font-size: 1.5rem;
   }
 }
 .header-container .cta-container .cta-button {
@@ -444,9 +462,16 @@ footer small {
   font-size: 3rem;
   font-weight: bold;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 #info .tabs .tabs-item .tabs-item-description {
   font-size: 2rem;
+}
+#info .tabs .tabs-item .tabs-item-description ul li {
+  margin-bottom: 10px;
+}
+#info .tabs .tabs-item .tabs-item-description ol li {
+  margin-bottom: 10px;
 }
 #info .tabs .tabs-item-selected {
   display: flex;
@@ -538,6 +563,11 @@ footer small {
   display: none;
   width: 50%;
 }
+@media (max-width: 500px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item {
+    width: 90%;
+  }
+}
 #accordion .tabs .tabs-links .tabs-items .tabs-item-selected {
   display: flex;
   flex-direction: column;
@@ -545,10 +575,36 @@ footer small {
 #accordion .tabs .tabs-links .tabs-items .tabs-item-title {
   font-size: 3rem;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 #accordion .tabs .tabs-links .tabs-items .tabs-item-description {
   font-size: 2rem;
+}
+#accordion .tabs .tabs-links .tabs-items .tabs-item-description ul li {
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item-description ul li {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 400px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item-description ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item-description ol {
+    padding: 0 20px;
+  }
+}
+#accordion .tabs .tabs-links .tabs-items .tabs-item-description ol li {
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item-description ol li {
+    font-size: 1.8rem;
+  }
 }
 #accordion .tabs .tabs-links .tabs-items-selected {
   display: flex;

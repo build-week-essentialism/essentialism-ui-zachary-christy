@@ -12,20 +12,29 @@
     align-items: center;
     margin-bottom: 250px;
     color: #fff;
+    padding: 0 10px;
 
     h1 {
       margin-bottom: 30px;
 
-      @media @mobile {
-        font-size: 3rem;
+      @media @tabLinksBreak {
+        font-size: 2.8rem;
+      }
+      @media @xsmall {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
       }
     }
 
     h4 {
       margin-bottom: 30px;
+      text-align: center;
 
-      @media @mobile {
+      @media @tabLinksBreak {
         font-size: 1.8rem;
+      }
+      @media @xsmall {
+        font-size: 1.5rem;
       }
     }
 

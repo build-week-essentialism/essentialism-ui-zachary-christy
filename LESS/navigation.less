@@ -9,26 +9,39 @@
     align-items: center;
     width: 50%;
 
+    @media @navBreak {
+      .flex(flex, column, space-around);
+    }
+
     a {
       color: #fff;
       text-decoration: none;
       transition: all .5s ease;
     }
 
-    .link {
-      font-size: 1.6rem;
+    .logo {
+      font-size: 2.4rem;
+
+      @media @navBreak {
+        order: -1;
+        margin-bottom: 10px;
+      }
 
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
         color: @ctaBlue;
       }
     }
 
-    .logo {
-      font-size: 2.4rem;
+    .link {
+      font-size: 1.6rem;
+
+      @media @navBreak {
+        margin-bottom: 10px;
+      }
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.5);
         color: @ctaBlue;
       }
     }

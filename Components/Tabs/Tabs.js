@@ -10,9 +10,12 @@ class Tab {
   };
 
   deselect() {
-    this.tabsLink.deselect();
-    this.tabsLink.select();
-
+    if(document.documentElement.clientWidth > 600) {
+      this.tabsLink.deselect();
+      this.tabsLink.select();
+    } else {
+      this.tabsLink.accordion();
+    }
   }
 }
 
@@ -22,8 +25,10 @@ class TabLink {
     this.element = element;
     this.tabElement = tabElement;
     this.data = this.element.dataset.tab;
+
+    this.contentElement = tabElement.querySelector(`.tabs-items[data-tab="${this.data}"]`);
     this.itemElement = tabElement.querySelector(`.tabs-item[data-tab="${this.data}"]`);
-    this.tabItem = new TabItem(this.itemElement, this.tabElement);
+    this.tabItem = new TabItem(this.contentElement, this.itemElement, this.tabElement);
   };
 
   deselect() {
@@ -46,12 +51,24 @@ class TabLink {
     this.element.classList.add('tabs-link-selected');
     this.tabItem.select();
   }
+
+  accordion() {
+    const links = this.tabElement.querySelectorAll('.tabs-link');
+
+    links.forEach(function(link) {
+      link.classList.remove('tabs-link-selected');
+    });
+
+    this.element.classList.add('tabs-link-selected');
+    this.tabItem.accordion();
+  }
 }
 
 class TabItem {
-  constructor(element, tabElement) {
+  constructor(contentElement, itemElement, tabElement) {
     // Assign this.element to the passed in element
-    this.element = element;
+    this.contentElement = contentElement;
+    this.itemElement = itemElement;
     this.tabElement = tabElement;
   }
 
@@ -64,7 +81,21 @@ class TabItem {
   }
 
   select() {
-    this.element.classList.add('tabs-item-selected');
+    this.itemElement.classList.add('tabs-item-selected');
+  }
+
+  accordion() {
+    const content = this.tabElement.querySelectorAll('.tabs-items');
+    console.log(this.itemElement);
+    content.forEach(function(content) {
+      content.classList.remove('tabs-items-selected');
+
+    });
+    this.itemElement.classList.remove('tabs-item-selected');
+    this.contentElement.classList.add('tabs-items-selected');
+    this.itemElement.classList.add('tabs-item-selected');
+
+
   }
 }
 

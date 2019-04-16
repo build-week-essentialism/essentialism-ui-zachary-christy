@@ -6,6 +6,10 @@
   height: auto;
   padding: 0 20px 30px;
 
+  @media @tabLinksBreak {
+    .flex(flex, row, center);
+  }
+
   .card{
     .flex(flex, column, space-between);
     width: 30%;
@@ -16,6 +20,14 @@
     background-color: @cardBg;
     .card-shadow();
     transition: all .5s ease;
+
+    @media @tablet {
+      width: 45%;
+    }
+
+    @media @tabLinksBreak {
+      width: 80%;
+    }
 
     &:hover {
       transform: scale(1.01);

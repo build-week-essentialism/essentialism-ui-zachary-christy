@@ -281,6 +281,13 @@ footer small {
   height: auto;
   padding: 0 20px 30px;
 }
+@media (max-width: 600px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .card-container .card {
   display: flex;
   flex-direction: column;
@@ -295,6 +302,16 @@ footer small {
   -moz-box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease;
+}
+@media (max-width: 1000px) {
+  .card-container .card {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .card-container .card {
+    width: 80%;
+  }
 }
 .card-container .card:hover {
   transform: scale(1.01);

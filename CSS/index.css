@@ -229,6 +229,11 @@ img {
 .about-header .nav-container .link {
   color: #303030;
 }
+@media (max-width: 1000px) {
+  #info-link {
+    display: none;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;

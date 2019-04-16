@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    color: #303030;
+    color: @shadedBlack;
 
   }
   .tabs-item {
@@ -30,34 +30,32 @@
   }
 
   .tabs-links {
-    display: flex;
-    justify-content: center;
-    background-color: #F4F4F4;
-    color: #303030;
+    .flex(flex, row, center);
+    background-color: @offWhite;
+    color: @shadedBlack;
   }
 
   .tabs-link {
     padding: 20px 25px;
     font-size: 24px;
-    background-color: #F4F4F4;
+    background-color: @offWhite;
     border-right: 1px solid white;
-    color: #303030;
+    color: @shadedBlack;
     cursor: pointer;
     &:hover {
-      background-color: #303030;
+      background-color: @shadedBlack;
       color: #fff;
     }
   }
   .tabs-link-selected {
     z-index: 2;
     background-color: white;
-    color: #303030;
-    -webkit-box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
-    box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
+    color: @shadedBlack;
+    .tab-shadow();
+
     &:hover {
       background-color: white;
-      color: #303030;
+      color: @shadedBlack;
     }
   }
 }

@@ -1,14 +1,11 @@
 .navbar {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
+  .flex(flex, row, center);
   padding-top: 30px;
 
   .nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    .flex(flex, row, space-around);
     align-items: center;
     width: 50%;
 
@@ -23,7 +20,7 @@
 
       &:hover {
         transform: scale(1.5);
-        color: #0093FF;
+        color: @ctaBlue;
       }
     }
 
@@ -32,23 +29,23 @@
 
       &:hover {
         transform: scale(1.1);
-        color: #0093FF;
+        color: @ctaBlue;
       }
     }
   }
 }//Landing Page
 
 .about-header {
-  background-color: #F4F4F4;
+  background-color: @offWhite;
   padding-bottom: 20px;
   .nav-container {
 
     .logo{
-      color: #303030;
+      color: @shadedBlack;
     }
 
     .link {
-      color: #303030;
+      color: @shadedBlack;
     }
   }
 }

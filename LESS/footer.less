@@ -1,10 +1,8 @@
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  .flex(flex, row, center);
   align-items: center;
   width: 100%;
-  background: #F4F4F4;
+  background: @offWhite;
   padding: 20px;
 
   .footer-nav-container {
@@ -13,7 +11,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: black;
+      color: @shadedBlack;
       transition: all .5s ease;
     }
 
@@ -22,7 +20,7 @@ footer {
 
       &:hover {
         transform: scale(1.1);
-        color: #0093FF;
+        color: @ctaBlue;
       }
     }
 

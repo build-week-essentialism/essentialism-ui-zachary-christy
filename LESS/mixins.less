@@ -1,14 +1,17 @@
-.width-100 {
-  width: 100%;
+.card-shadow() {
+  -webkit-box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
 }
 
-.border-bottom-grey {
-  border-bottom: 1px solid lightgrey;
+.tab-shadow() {
+  -webkit-box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
+  box-shadow: 5px -5px 10px -10px rgba(0,0,0,0.75);
 }
 
-.flex(@jc: none, @ai: none, @dir: row) {
-  display: flex;
-  justify-content: @jc;
-  align-items: @ai;
-  flex-direction: @dir;
+.flex(@display, @direction, @justify) {
+  display: @display;
+  flex-direction: @direction;
+  justify-content: @justify;
 }

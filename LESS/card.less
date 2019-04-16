@@ -1,26 +1,20 @@
 .card-container {
-  display: flex;
-  flex-direction: row;
+  .flex(flex, row, space-between);
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: auto;
   padding: 0 20px 30px;
 
   .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    .flex(flex, column, space-between);
     width: 30%;
     padding: 10px;
-    border: 1px solid #FBFBFB;
+    border: 1px solid @cardBg;
     border-radius: 5px;
     margin: 30px 0;
-    background-color: #FBFBFB;
-    -webkit-box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
+    background-color: @cardBg;
+    .card-shadow();
     transition: all .5s ease;
 
     &:hover {

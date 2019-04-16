@@ -4,14 +4,11 @@
   background-size: cover;
   width: 100%;
   height: 730px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .flex(flex, column, space-between);
 }
 
 .cta-container {
-  display: flex;
-  flex-direction: column;
+  .flex(flex, column, space-between);
   align-items: center;
   margin-bottom: 250px;
   color: #fff;
@@ -21,21 +18,19 @@
   }
 
   .cta-button {
-    border: 2px solid #0093FF;
+    border: 2px solid @ctaBlue;
     border-radius: 5px;
-    background-color: #0093FF;
+    background-color: @ctaBlue;
     color: #fff;
     font-size: 2rem;
     padding: 15px 30px;
     text-decoration: none;
-    -webkit-box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 29px -8px rgba(0,0,0,0.75);
+    .card-shadow();
     transition: all .5s ease;
 
     &:hover {
       border: 2px solid #fff;
-      background-color: #00000000;
+      background-color: @transparent;
       color: #fff;
     }
   }

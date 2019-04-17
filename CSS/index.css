@@ -374,6 +374,21 @@ footer small {
 .who-are-we h1 {
   text-align: center;
 }
+.who-are-we p i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+.who-are-we a {
+  text-align: center;
+}
+.who-are-we a i {
+  font-size: 3rem;
+  color: #303030;
+  transition: all 0.5s ease;
+}
+.who-are-we a i:hover {
+  transform: scale(1.1);
+}
 .header-container {
   background-image: url(../assets/header.jpg);
   background-position: center;

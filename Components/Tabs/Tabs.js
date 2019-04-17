@@ -62,10 +62,19 @@ class TabLink {
 
   accordion() {
     const links = this.tabElement.querySelectorAll('.tabs-link');
+    const arrows = this.tabElement.querySelectorAll('.fa-angle-down');
+    const arrow = this.element.querySelector('.fa-angle-down');
 
     links.forEach(function(link) {
       link.classList.remove('tabs-link-selected');
     });
+
+    arrows.forEach(function(arrow) {
+      arrow.classList.remove('rotate');
+    });
+
+    arrow.classList.add('rotate');
+
 
     this.element.classList.add('tabs-link-selected');
     this.tabItem.accordion();

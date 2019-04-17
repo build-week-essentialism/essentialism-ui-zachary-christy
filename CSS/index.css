@@ -671,3 +671,6 @@ footer small {
 #accordion .tabs .tabs-links .tabs-items-selected {
   display: flex;
 }
+.rotate {
+  transform: rotate(90deg);
+}

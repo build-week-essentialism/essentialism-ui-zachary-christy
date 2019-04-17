@@ -632,7 +632,7 @@ footer small {
     font-size: 1.3rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #accordion .tabs .tabs-links .tabs-items .tabs-item-description ol {
     padding: 0 20px;
   }

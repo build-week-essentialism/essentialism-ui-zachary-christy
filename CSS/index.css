@@ -307,7 +307,7 @@ footer small {
   box-shadow: 10px 10px 29px -8px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .card-container .card {
     width: 45%;
   }
@@ -356,7 +356,7 @@ footer small {
     font-size: 3rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .jumbotron p {
     text-align: center;
     padding: 0 10px;
@@ -398,12 +398,18 @@ footer small {
 }
 @media (max-width: 600px) {
   .header-container .cta-container h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 400px) {
   .header-container .cta-container h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 330px) {
+  .header-container .cta-container h1 {
+    font-size: 2.1rem;
     margin-bottom: 20px;
   }
 }
@@ -413,12 +419,17 @@ footer small {
 }
 @media (max-width: 600px) {
   .header-container .cta-container h4 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 400px) {
   .header-container .cta-container h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 330px) {
+  .header-container .cta-container h4 {
+    font-size: 1.2rem;
   }
 }
 .header-container .cta-container .cta-button {
@@ -463,6 +474,11 @@ footer small {
   display: none;
   width: 50%;
 }
+@media (max-width: 800px) {
+  #info .tabs .tabs-item {
+    width: 70%;
+  }
+}
 #info .tabs .tabs-item .tabs-item-title {
   font-size: 3rem;
   font-weight: bold;
@@ -474,6 +490,14 @@ footer small {
 }
 #info .tabs .tabs-item .tabs-item-description ul li {
   margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  #info .tabs .tabs-item .tabs-item-description ul li {
+    font-size: 1.7rem;
+  }
+}
+#info .tabs .tabs-item .tabs-item-description ol {
+  margin-left: 20px;
 }
 #info .tabs .tabs-item .tabs-item-description ol li {
   margin-bottom: 10px;
@@ -568,7 +592,7 @@ footer small {
   display: none;
   width: 50%;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #accordion .tabs .tabs-links .tabs-items .tabs-item {
     width: 90%;
   }
@@ -585,6 +609,11 @@ footer small {
 #accordion .tabs .tabs-links .tabs-items .tabs-item-description {
   font-size: 2rem;
 }
+@media (max-width: 400px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item-description p {
+    font-size: 1.5rem;
+  }
+}
 #accordion .tabs .tabs-links .tabs-items .tabs-item-description ul li {
   margin-bottom: 10px;
 }
@@ -598,6 +627,11 @@ footer small {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 330px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item-description ul li {
+    font-size: 1.3rem;
+  }
+}
 @media (max-width: 500px) {
   #accordion .tabs .tabs-links .tabs-items .tabs-item-description ol {
     padding: 0 20px;
@@ -609,6 +643,11 @@ footer small {
 @media (max-width: 500px) {
   #accordion .tabs .tabs-links .tabs-items .tabs-item-description ol li {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 400px) {
+  #accordion .tabs .tabs-links .tabs-items .tabs-item-description ol li {
+    font-size: 1.5rem;
   }
 }
 #accordion .tabs .tabs-links .tabs-items-selected {

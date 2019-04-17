@@ -24,6 +24,10 @@
       display: none;
       width: 50%;
 
+      @media @tablet{
+        width: 70%;
+      }
+
       .tabs-item-title {
         font-size: 3rem;
         font-weight: bold;
@@ -37,10 +41,16 @@
         ul {
           li {
             margin-bottom: 10px;
+
+            @media @navBreak {
+              font-size: 1.7rem;
+            }
           }
         }
 
         ol {
+          margin-left: 20px;
+
           li {
             margin-bottom: 10px;
           }
@@ -145,7 +155,7 @@
             display: none;
             width: 50%;
 
-            @media @mobile {
+            @media @tabLinksBreak {
               width: 90%;
             }
           }
@@ -163,6 +173,12 @@
           .tabs-item-description {
             font-size: 2rem;
 
+            p {
+              @media @small {
+                font-size: 1.5rem;
+              }
+            }
+
             ul {
               li {
                 margin-bottom: 10px;
@@ -171,8 +187,12 @@
                   font-size: 1.7rem;
                 }
 
-                @media @xsmall {
+                @media @small {
                   font-size: 1.5rem;
+                }
+
+                @media @xsmall {
+                  font-size: 1.3rem;
                 }
               }
             }
@@ -187,6 +207,10 @@
 
                 @media @mobile {
                   font-size: 1.8rem;
+                }
+
+                @media @small {
+                  font-size: 1.5rem;
                 }
               }
             }

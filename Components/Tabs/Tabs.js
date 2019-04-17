@@ -61,8 +61,11 @@ class TabLink {
   }
 
   accordion() {
+    // links selector
     const links = this.tabElement.querySelectorAll('.tabs-link');
+    // all down arrows selector
     const arrows = this.tabElement.querySelectorAll('.fa-angle-down');
+    // down arrow for this element selector
     const arrow = this.element.querySelector('.fa-angle-down');
 
     links.forEach(function(link) {

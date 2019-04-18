@@ -1,5 +1,8 @@
-# essentialism-ui-zachary-christy
-lambda-buildweek-project
+# Essentialism-ui-zachary-christy
+Lambda-Buildweek-Project
+
+## LESS css
+Less and less watch compiler were used to style the pages.
 
 ## Landing Page
 The landing page is apart of the marketing plan for Essentialism.
